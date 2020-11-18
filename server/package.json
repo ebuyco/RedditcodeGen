@@ -1,5 +1,5 @@
 {
-  "name": "RedditcodeGen",
+  "name": "lireddit-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,25 +10,12 @@
     "dev": "nodemon dist/index.js",
     "start": "node dist/index.js",
     "start2": "ts-node src/index.ts",
-    "dev2": "nodemon --exec ts-node src/index.ts",
-    "create:migration": "mikro-orm migration:create"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ebuyco/RedditcodeGen.git"
+    "dev2": "nodemon --exec ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ebuyco/RedditcodeGen/issues"
-  },
-  "homepage": "https://github.com/ebuyco/RedditcodeGen#readme",
-  "dependencies": {
-    "@mikro-orm/cli": "^4.0.7",
-    "@mikro-orm/core": "^4.0.7",
-    "@mikro-orm/migrations": "^4.0.7",
-    "@mikro-orm/postgresql": "^4.0.7",
+  "devDependencies": {
     "@types/connect-redis": "^0.0.14",
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.7",
@@ -38,14 +25,12 @@
     "@types/nodemailer": "^6.4.0",
     "@types/redis": "^2.8.25",
     "@types/uuid": "^8.0.1",
-    "class-validator": "^0.12.2",
-    "core-util-is": "^1.0.2",
     "gen-env-types": "^1.0.3",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
-  "devDependencies": {
+  "dependencies": {
     "apollo-server-express": "^2.16.1",
     "argon2": "^0.26.2",
     "connect-redis": "^5.0.0",
